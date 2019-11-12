@@ -26,13 +26,6 @@ void main() /** Entry point for the application */
 			// window closed button pressed
 			if (event.type == sf::Event::Closed)
 				window.close();
-			if (event.type == sf::Event::KeyPressed) {}
-
-			if (event.type == sf::Event::MouseButtonPressed) {}
-				
-			if (event.type == sf::Event::MouseMoved) {}
-
-			if (event.type == sf::Event::MouseWheelScrolled) {}
 
 		}
 
