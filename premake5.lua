@@ -39,6 +39,7 @@ project "CWStarter"
 	filter "configurations:Debug"
 		runtime "Debug"
 		symbols "On"
+			defines "SFML_STATIC"
 		
 		libdirs 
 		{
@@ -46,17 +47,24 @@ project "CWStarter"
 			"../../vendor/SFML-2.4.2/lib"
 		}
 		
-		
-		debugenvs { "PATH=%PATH%;../../../vendor/SFML-2.4.2/bin;"}
-		
 		links
 		{
 			"Box2D",
 			"sfml-main",
-			"sfml-graphics-d",
-			"sfml-system-d",
-			"sfml-window-d",
-			"sfml-audio-d"
+			"sfml-graphics-s-d",
+			"sfml-system-s-d",
+			"sfml-window-s-d",
+			"sfml-audio-s-d",
+			"opengl32.lib",
+			"winmm.lib",
+			"gdi32.lib",
+			"openal32.lib",
+			"flac.lib",
+			"vorbisenc.lib",
+			"vorbisfile.lib",
+			"vorbis.lib",
+			"ogg.lib",
+			"jpeg.lib"
 		}
 
 	filter "configurations:Release"
@@ -68,4 +76,24 @@ project "CWStarter"
 		{
 			"../../vendor/Box2D/x64/Release",
 			"../../vendor/SFML-2.4.2/lib"
+		}
+		
+		links
+		{
+			"Box2D",
+			"sfml-main",
+			"sfml-graphics-s",
+			"sfml-system-s",
+			"sfml-window-s",
+			"sfml-audio-s",
+			"opengl32.lib",
+			"winmm.lib",
+			"gdi32.lib",
+			"openal32.lib",
+			"flac.lib",
+			"vorbisenc.lib",
+			"vorbisfile.lib",
+			"vorbis.lib",
+			"ogg.lib",
+			"jpeg.lib"
 		}
