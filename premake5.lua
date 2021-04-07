@@ -64,7 +64,8 @@ project "CWStarter"
 			"vorbisfile.lib",
 			"vorbis.lib",
 			"ogg.lib",
-			"jpeg.lib"
+			"jpeg.lib",
+			"freetype.lib"
 		}
 
 	filter "configurations:Release"
@@ -95,5 +96,6 @@ project "CWStarter"
 			"vorbisfile.lib",
 			"vorbis.lib",
 			"ogg.lib",
-			"jpeg.lib"
+			"jpeg.lib",
+			"freetype.lib"
 		}
